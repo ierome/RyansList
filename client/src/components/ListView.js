@@ -3,6 +3,7 @@ import {getPostings} from '../actions/main.actions'
 import {useSelector} from 'react-redux'
 import {Link} from 'react-router-dom'
 import '../styles/ListView.css'
+import moment from 'moment'
 
 export default props => {
     const [view, setView] = useState('list')
@@ -40,16 +41,24 @@ export default props => {
                 if (view === "list") {
                     return (
                         <div className="post">
-                    <Link to={`/view/${props.match.params.category}/${props.match.params.subcategory}/${item.id}`}><p>&#9734; Aug 9 {item.title} ${item.price} ({item.city})</p></Link>
+                    <p>&#9734; <span className="date">{moment(item.created_at).format("MMM Do")}</span> </p><Link to={`/view/${props.match.params.category}/${props.match.params.subcategory}/${item.id}`}><p>{item.title} ${item.price} ({item.city})</p></Link>
                     </div>
                     )
                 } else if(view === "thumbnail") {
-                    return (<h1>Thumbnail</h1>)
+                    return (
+                        <div className="thumbPost">
+                            <img src={item.image} alt=""></img>
+                            <p>&#9734; <span className="date">{moment(item.created_at).format("MMM Do")}</span> </p><Link to={`/view/${props.match.params.category}/${props.match.params.subcategory}/${item.id}`}><p>{item.title} ${item.price} ({item.city})</p></Link>
+                        </div>
+                    )
                 } else if(view === "gallery") {
                     return (                        <div className="galleryPost">
                     <img className="itemImage" src={item.image}></img>
-                <Link to={`/view/${props.match.params.category}/${props.match.params.subcategory}/${item.id}`}><p>&#9734; Aug 9 {item.title} ${item.price} ({item.city})</p></Link>
-                </div>)
+                    <div id="postInfos">
+                    <p>&#9734; <span className="date">{moment(item.created_at).format("MMM Do")}</span> </p><Link to={`/view/${props.match.params.category}/${props.match.params.subcategory}/${item.id}`}><p>{item.title} ${item.price} ({item.city})</p></Link>                
+                    </div>
+                    </div>
+                    )
                 }
             })}
             </div>

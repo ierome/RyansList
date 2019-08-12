@@ -3,6 +3,7 @@
     height: 1000px;
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 #topBar {
     width: 100%;
@@ -39,16 +40,15 @@
     align-items: center;
 }
 .post-thumbnail {
-    width: 800px;
     display:flex;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
+    margin-left: 250px;
 }
 .post-gallery {
-    width: 1300px;
+    width: 100%;
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 #searchOptions {
     margin-left: 100px;
@@ -74,11 +74,36 @@
 .post {
     width: 100%;
     margin-left: 250px;
+    display: flex;
+}
+.post p {
+    margin: 5px;
 }
 .itemImage {
     width: 200px;
     height: 200px;
 }
 .galleryPost {
+    width: 200px;
     margin: 10px;
+}
+.thumbPost img {
+    width: 60px;
+    height: 60px;
+}
+.thumbPost {
+    display: flex;
+    margin: 10px;
+}
+.date {
+    font-size: 12px;
+
+}
+#postInfos {
+    display: flex;
+    width: 200px;
+    overflow: hidden;
+}
+#postInfos p {
+    margin: 5px;
 }

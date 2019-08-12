@@ -3,6 +3,7 @@ import {getPost} from '../actions/main.actions'
 import {useSelector} from 'react-redux'
 import {Link} from 'react-router-dom'
 import '../styles/View.css'
+import moment from 'moment'
 
 export default props => {
     const post = useSelector(appState => appState.post)
@@ -24,7 +25,7 @@ export default props => {
                         <p>{item.content}</p>
                         <img src="https://via.placeholder.com/300x300.png" alt=""></img>
                         <div id="post-footer">
-                            <p>Post ID: {item.id}       Posted about an hour ago</p>
+                            <p>Post ID: {item.id}       Posted {moment(item.created_at).fromNow()}</p>
                             <li>safety tips</li>
                             <li>prohibited items</li>
                             <li>product recalls</li>

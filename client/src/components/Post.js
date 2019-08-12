@@ -51,9 +51,9 @@ export default props => {
                 </select>
                 </div>
                 <div id="textInputs">
-                <input type="text" placeholder="POSTING TITLE" onChange={e => setTitle(e.target.value)}></input>
-                <input type="text" placeholder="CITY" onChange={e => setCity(e.target.value)}></input>
-                <input type="text" placeholder="PRICE" onChange={e => setPrice(e.target.value)}></input>
+                <input type="text" value={title} placeholder="POSTING TITLE" onChange={e => setTitle(e.target.value)}></input>
+                <input type="text" value={city} placeholder="CITY" onChange={e => setCity(e.target.value)}></input>
+                <input type="text" value={price} placeholder="PRICE" onChange={e => setPrice(e.target.value)}></input>
                 </div>
                 <textarea id="postContent" onChange={e => setContent(e.target.value)}></textarea>
                 <button type="submit">Add Posting</button>
