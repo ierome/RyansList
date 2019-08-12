@@ -3,6 +3,6 @@
 
 To do list:
 - [x] Gallery View
-- [ ] Thumbnail View
-- [ ] Image file upload
-- [ ] Users
+- [x] Thumbnail View
+- [ ] Image file upload (Not sure how to do this yet. Still researching)
+- [ ] Users (Need to learn how to authenticate via Express with web tokens)
