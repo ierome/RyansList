@@ -1,0 +1,34 @@
+#postWrapper{
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#post {
+    position: relative;
+    width: 1000px;
+    height: 800px;
+}
+#viewTopBar {
+    margin-top: 10px;
+    height: 30px;
+    background-color: #ccc;
+    line-height: 30px;
+}
+#viewNav {
+    display: flex;
+    justify-content: flex-start;
+}
+#post-footer {
+    position:absolute;
+   bottom:50px;
+}
+#ryanFooter {
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    left: 140px;
+    text-align: center;
+}

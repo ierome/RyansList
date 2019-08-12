@@ -1,0 +1,42 @@
+#makePostWrapper {
+    width: 1400px;
+    height: 900px;
+    margin: auto;
+}
+#postHeader {
+    width: 1400px;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#postForm {
+width: 1000px;
+margin: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.hide {
+    display: none;
+}
+#textInputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#textInputs input{
+text-indent: 10px;
+}
+#textInputs input:nth-child(1) {
+    width: 500px;
+    height: 40px;
+}
+#textInputs input {
+    width: 200px;
+    height: 40px;
+}
+#postContent {
+    height: 380px;
+}

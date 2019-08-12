@@ -1,0 +1,173 @@
+#mainWrapper {
+    width: 1400px;
+    height: 1000px;
+    display: flex;
+    margin: auto;
+}
+#leftSideBar {
+    text-align: center;
+    width: 300px;
+    height: 1000px;
+}
+#leftSideBar li {
+    padding: 5px;
+}
+#leftSideBar h1 {
+    color: rgb(17,0,233)
+}
+#leftSideBar h1:hover {
+    color: rgb(107, 0, 109);
+    text-decoration: underline;
+}
+#calendar {
+    padding-top: 20px;
+    margin: auto;
+    width: 250px;
+}
+#search {
+    width: 250px;
+    height: 35px;
+}
+.react-calendar__tile {
+    height: 20px;
+    line-height: 10px;
+}
+.react-calendar__navigation {
+    height: 25px;
+    margin-bottom: 1em;
+}
+.linksDiv {
+    margin-top: 20px;
+}
+#rightSideBar {
+    width: 300px;
+    height: 1000px;
+}
+#mainContent {
+    position: relative;
+    width: 800px;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#community {
+    font-size: 15px;
+    width: 260px;
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+#cmmty h1 {
+    background-color: rgb(238,238,238);
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(17,0,233)
+}
+#hzing h1 {
+    background-color: rgb(238,238,238);
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(17,0,233)
+}
+#jbz h1 {
+    background-color: rgb(238,238,238);
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(17,0,233)
+}
+#housing {
+    width: 290px;
+}
+#jobs {
+    width: 200px;
+}
+#srvs {
+    margin-top: -583px;
+}
+#srvs h1 {
+    background-color: rgb(238,238,238);
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(17,0,233)
+}
+#fs {
+    margin-top: -548px;
+}
+#fs h1{
+    background-color: rgb(238,238,238);
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(17,0,233)
+}
+#prsnl {
+    position: absolute;
+    left: 0;
+    bottom: 300px;
+    width: 260px;
+}
+#prsnl h1 {
+    background-color: rgb(238,238,238);
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(17,0,233)
+}
+#gigz {
+    margin-left: -250px;
+    margin-top: -135px;
+}
+#gigz h1 {
+    background-color: rgb(238,238,238);
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(17,0,233)
+}
+#gigs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 82px;
+    width: 200px;
+}
+#fs h1 {
+    background-color: rgb(238,238,238);
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(17,0,233)
+}
+#forSale {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 350px;
+}
+#services {
+    width: 260px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/* HTML Styling for Default Tags */
+li {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: rgb(17,0,233)
+}
+li:hover {
+    color: rgb(107, 0, 109);
+    text-decoration: underline;
+}

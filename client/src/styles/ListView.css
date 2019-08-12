@@ -1,0 +1,65 @@
+#listWrapper {
+    width: 1400px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+#topBar {
+    width: 100%;
+    height: 40px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+#navigation {
+    margin-left: 20px;
+}
+#profile {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+#searchList {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+#searchInputList {
+    text-indent: 10px;
+    font-size: 20px;
+    width: 700px;
+}
+.post-list {
+    width: 800px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#searchOptions {
+    margin-left: 100px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+#searchOptions button {
+    font-family: "Futura";
+    margin: 25px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+}
+#searchOptions button:hover {
+    background-color: rgb(24, 24, 129);
+    color: white;
+}
+.active {
+    background-color: rgb(24, 24, 129);
+    color: white;
+}
+.post {
+    width: 100%;
+    margin-left: 250px;
+}
