@@ -38,6 +38,18 @@
     flex-direction: column;
     align-items: center;
 }
+.post-thumbnail {
+    width: 800px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post-gallery {
+    width: 1300px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 #searchOptions {
     margin-left: 100px;
     width: 1000px;
@@ -62,4 +74,11 @@
 .post {
     width: 100%;
     margin-left: 250px;
+}
+.itemImage {
+    width: 200px;
+    height: 200px;
+}
+.galleryPost {
+    margin: 10px;
 }

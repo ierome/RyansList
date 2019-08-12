@@ -2,6 +2,7 @@
 #### A clone of craigslist.
 
 To do list:
-- Gallery View
-- Thumbnail View
-- Image file upload
+- [x] Gallery View
+- [ ] Thumbnail View
+- [ ] Image file upload
+- [ ] Users

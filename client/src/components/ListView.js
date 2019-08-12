@@ -35,7 +35,7 @@ export default props => {
                 <button onClick={changeView} value="gallery" className={view === "gallery" ? "gallery active" : "gallery"}>Gallery View</button>
                 <button onClick={changeView} value="list" className={view === "list" ? "list active" : "list"}>List View</button>
             </div>
-            <div className="post-list">
+            <div className={'post-' + view}>
             {postings.map(item => {
                 if (view === "list") {
                     return (
@@ -44,9 +44,12 @@ export default props => {
                     </div>
                     )
                 } else if(view === "thumbnail") {
-                    return <h1>Thumbnail</h1>
+                    return (<h1>Thumbnail</h1>)
                 } else if(view === "gallery") {
-                    return <h1>Gallery</h1>
+                    return (                        <div className="galleryPost">
+                    <img className="itemImage" src={item.image}></img>
+                <Link to={`/view/${props.match.params.category}/${props.match.params.subcategory}/${item.id}`}><p>&#9734; Aug 9 {item.title} ${item.price} ({item.city})</p></Link>
+                </div>)
                 }
             })}
             </div>
